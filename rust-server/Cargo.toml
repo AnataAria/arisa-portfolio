@@ -1,0 +1,14 @@
+[package]
+name = "rust-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aws-config = { version = "1.5.18", features = ["behavior-version-latest"] }
+tokio = { version = "1.44.0", features = ["full"] }
+aws-sdk-s3 = "1.78.0"
+axum = "0.8.1"
+tonic = "0.12.3"
+tracing = "0.1.41"
+warp = "0.3.7"
+sqlx = "0.8.3"
