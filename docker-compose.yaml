@@ -1,13 +1,13 @@
 services:
   portfolio-client:
-    image: ${DOCKER_USERNAME}/portfolio-client:latest
+    image: ${REGISTRY_USERNAME}/portfolio-client:latest
     build:
       context: nextjs-client
       dockerfile: Dockerfile
       args:
         PUBLIC_API_ENDPOINT: ${PUBLIC_API_ENDPOINT}
   portfolio-server:
-    image: ${DOCKER_USERNAME}/portfolio-server:latest
+    image: ${REGISTRY_USERNAME}/portfolio-server:latest
     build:
       context: rust-server
       dockerfile: Dockerfile
